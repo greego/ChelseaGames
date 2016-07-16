@@ -1,0 +1,27 @@
+﻿{
+  "_links": {
+    "self": { "href": "http://api.football-data.org/v1/teams/61/fixtures" },
+    "team": { "href": "http://api.football-data.org/v1/teams/61" }
+  },
+  "timeFrameStart": "2016-07-10",
+  "timeFrameEnd": "2016-08-13",
+  "count": 1,
+  "fixtures": [
+    {
+      "_links": {
+        "self": { "href": "http://api.football-data.org/v1/fixtures/150838" },
+        "competition": { "href": "http://api.football-data.org/v1/competitions/426" },
+        "homeTeam": { "href": "http://api.football-data.org/v1/teams/61" },
+        "awayTeam": { "href": "http://api.football-data.org/v1/teams/563" }
+      },
+      "date": "2016-08-13T14:00:00Z",
+      "status": "TIMED",
+      "matchday": 1,
+      "homeTeamName": "Chelsea FC",
+      "awayTeamName": "West Ham United FC",
+      "result": {
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null
+      }
+    }
+  ]}

@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChelseaGames", "ChelseaGames\ChelseaGames.csproj", "{5906CCF1-37A1-4F43-912A-C0D2CA746CA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChelseaGamesTest", "ChelseaGamesTest\ChelseaGamesTest.csproj", "{80A9E56C-C376-4534-8C7D-586EE5F41884}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonDataSource", "FootballDataOrgDataSource\JsonDataSource.csproj", "{4F87F5C7-D303-4B6E-8D80-714AE06B7C86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChelseaGamesConsoleApp", "ChelseaGamesConsoleApp\ChelseaGamesConsoleApp.csproj", "{8AAA2A92-379E-45AF-9486-9FA700C5A6A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{F6C37047-254B-481F-B4BC-724DA807E652}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PrimaryActors", "PrimaryActors", "{A5B6F1FF-47B6-4B10-8379-56001E8B8071}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SecondaryActors", "SecondaryActors", "{526E9331-6DD7-47F8-A4FE-01EBD73D9C0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonDataSourceTest", "FootballDataOrgDataSourceTest\JsonDataSourceTest.csproj", "{FDF0B728-12BA-4CD1-BD5B-8B32823F5240}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5906CCF1-37A1-4F43-912A-C0D2CA746CA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5906CCF1-37A1-4F43-912A-C0D2CA746CA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5906CCF1-37A1-4F43-912A-C0D2CA746CA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5906CCF1-37A1-4F43-912A-C0D2CA746CA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80A9E56C-C376-4534-8C7D-586EE5F41884}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80A9E56C-C376-4534-8C7D-586EE5F41884}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80A9E56C-C376-4534-8C7D-586EE5F41884}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80A9E56C-C376-4534-8C7D-586EE5F41884}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F87F5C7-D303-4B6E-8D80-714AE06B7C86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F87F5C7-D303-4B6E-8D80-714AE06B7C86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F87F5C7-D303-4B6E-8D80-714AE06B7C86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F87F5C7-D303-4B6E-8D80-714AE06B7C86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AAA2A92-379E-45AF-9486-9FA700C5A6A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AAA2A92-379E-45AF-9486-9FA700C5A6A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AAA2A92-379E-45AF-9486-9FA700C5A6A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AAA2A92-379E-45AF-9486-9FA700C5A6A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDF0B728-12BA-4CD1-BD5B-8B32823F5240}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDF0B728-12BA-4CD1-BD5B-8B32823F5240}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDF0B728-12BA-4CD1-BD5B-8B32823F5240}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDF0B728-12BA-4CD1-BD5B-8B32823F5240}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5906CCF1-37A1-4F43-912A-C0D2CA746CA9} = {F6C37047-254B-481F-B4BC-724DA807E652}
+		{80A9E56C-C376-4534-8C7D-586EE5F41884} = {F6C37047-254B-481F-B4BC-724DA807E652}
+		{4F87F5C7-D303-4B6E-8D80-714AE06B7C86} = {526E9331-6DD7-47F8-A4FE-01EBD73D9C0D}
+		{8AAA2A92-379E-45AF-9486-9FA700C5A6A2} = {A5B6F1FF-47B6-4B10-8379-56001E8B8071}
+		{FDF0B728-12BA-4CD1-BD5B-8B32823F5240} = {526E9331-6DD7-47F8-A4FE-01EBD73D9C0D}
+	EndGlobalSection
+EndGlobal
