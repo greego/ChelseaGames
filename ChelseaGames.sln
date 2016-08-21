@@ -19,6 +19,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SecondaryActors", "Secondar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonDataSourceTest", "FootballDataOrgDataSourceTest\JsonDataSourceTest.csproj", "{FDF0B728-12BA-4CD1-BD5B-8B32823F5240}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChelseaGamesAndroid", "Android\ChelseaGamesAndroid.csproj", "{EE982B0E-1A95-424E-B6D1-0EC1EC040F26}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,12 @@ Global
 		{FDF0B728-12BA-4CD1-BD5B-8B32823F5240}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDF0B728-12BA-4CD1-BD5B-8B32823F5240}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDF0B728-12BA-4CD1-BD5B-8B32823F5240}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE982B0E-1A95-424E-B6D1-0EC1EC040F26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE982B0E-1A95-424E-B6D1-0EC1EC040F26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE982B0E-1A95-424E-B6D1-0EC1EC040F26}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{EE982B0E-1A95-424E-B6D1-0EC1EC040F26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE982B0E-1A95-424E-B6D1-0EC1EC040F26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE982B0E-1A95-424E-B6D1-0EC1EC040F26}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,5 +63,6 @@ Global
 		{4F87F5C7-D303-4B6E-8D80-714AE06B7C86} = {526E9331-6DD7-47F8-A4FE-01EBD73D9C0D}
 		{8AAA2A92-379E-45AF-9486-9FA700C5A6A2} = {A5B6F1FF-47B6-4B10-8379-56001E8B8071}
 		{FDF0B728-12BA-4CD1-BD5B-8B32823F5240} = {526E9331-6DD7-47F8-A4FE-01EBD73D9C0D}
+		{EE982B0E-1A95-424E-B6D1-0EC1EC040F26} = {A5B6F1FF-47B6-4B10-8379-56001E8B8071}
 	EndGlobalSection
 EndGlobal
