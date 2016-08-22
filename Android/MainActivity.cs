@@ -2,6 +2,7 @@
 using Android.OS;
 using Android.Widget;
 using FootballDataOrgDataSource;
+using NextGame;
 
 namespace NextGameAndroid
 {
@@ -14,11 +15,7 @@ namespace NextGameAndroid
 
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
-
-            var data = new JsonFootballData();
-
-            var textView = FindViewById<TextView>(Resource.Id.applicationText);
-            textView.Text = string.Format("Chelsea's next game is at {0}, against {1}.", data.GetNextChelseaGameDate().ToLocalTime(), data.GetNextChelseaGameOpponent());
+            FindViewById<TextView>(Resource.Id.applicationText).Text = (new NextGameFormattedString(new JsonFootballData()).GetNextGameInfo());
         }
     }
 }
