@@ -87,9 +87,9 @@
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ChelseaGames\ChelseaGames.csproj">
+    <ProjectReference Include="..\ChelseaGames\NextGame.csproj">
       <Project>{5906ccf1-37a1-4f43-912a-c0d2ca746ca9}</Project>
-      <Name>ChelseaGames</Name>
+      <Name>NextGame</Name>
     </ProjectReference>
     <ProjectReference Include="..\FootballDataOrgDataSource\JsonDataSource.csproj">
       <Project>{4f87f5c7-d303-4b6e-8d80-714ae06b7c86}</Project>

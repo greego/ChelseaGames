@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChelseaGames", "ChelseaGames\ChelseaGames.csproj", "{5906CCF1-37A1-4F43-912A-C0D2CA746CA9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NextGame", "ChelseaGames\NextGame.csproj", "{5906CCF1-37A1-4F43-912A-C0D2CA746CA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChelseaGamesTest", "ChelseaGamesTest\ChelseaGamesTest.csproj", "{80A9E56C-C376-4534-8C7D-586EE5F41884}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NextGameTest", "ChelseaGamesTest\NextGameTest.csproj", "{80A9E56C-C376-4534-8C7D-586EE5F41884}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonDataSource", "FootballDataOrgDataSource\JsonDataSource.csproj", "{4F87F5C7-D303-4B6E-8D80-714AE06B7C86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChelseaGamesConsoleApp", "ChelseaGamesConsoleApp\ChelseaGamesConsoleApp.csproj", "{8AAA2A92-379E-45AF-9486-9FA700C5A6A2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NextGameConsole", "ChelseaGamesConsoleApp\NextGameConsole.csproj", "{8AAA2A92-379E-45AF-9486-9FA700C5A6A2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{F6C37047-254B-481F-B4BC-724DA807E652}"
 EndProject
@@ -19,7 +19,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SecondaryActors", "Secondar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonDataSourceTest", "FootballDataOrgDataSourceTest\JsonDataSourceTest.csproj", "{FDF0B728-12BA-4CD1-BD5B-8B32823F5240}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChelseaGamesAndroid", "Android\ChelseaGamesAndroid.csproj", "{EE982B0E-1A95-424E-B6D1-0EC1EC040F26}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NextGameAndroid", "Android\NextGameAndroid.csproj", "{EE982B0E-1A95-424E-B6D1-0EC1EC040F26}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

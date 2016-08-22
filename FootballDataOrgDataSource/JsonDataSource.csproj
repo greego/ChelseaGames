@@ -53,9 +53,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ChelseaGames\ChelseaGames.csproj">
+    <ProjectReference Include="..\ChelseaGames\NextGame.csproj">
       <Project>{5906ccf1-37a1-4f43-912a-c0d2ca746ca9}</Project>
-      <Name>ChelseaGames</Name>
+      <Name>NextGame</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

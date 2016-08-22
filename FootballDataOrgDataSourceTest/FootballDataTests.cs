@@ -2,6 +2,7 @@
 using FootballDataOrgDataSource;
 using NUnit.Framework;
 using System;
+using Shouldly;
 
 namespace FootballDataOrgDataSourceTest
 {
@@ -11,17 +12,19 @@ namespace FootballDataOrgDataSourceTest
         [Test]
         public void WhenNextChelseaGameDateIsRequested_ThenReturnFirstFixturesDate()
         {
-            var expectedDate = DateTimeOffset.Parse("2016-08-13T14:00:00Z");
-            var data = new JsonFootballData();
-            Assert.AreEqual(expectedDate, data.GetNextChelseaGameDate());
+            new JsonFootballData().GetNextChelseaGameDate().ShouldBe(DateTimeOffset.Parse("2016-08-13T14:00:00Z"));
         }
 
         [Test]
         public void WhenNextChelseaGameOpponentIsRequested_ThenReturnFirstFixturesAwayTeamName()
         {
-            var expectedOpponent = "West Ham United FC";
-            var data = new JsonFootballData();
-            Assert.AreEqual(expectedOpponent, data.GetNextChelseaGameOpponent());
+            new JsonFootballData().GetNextChelseaGameOpponent().ShouldBe("West Ham United FC");
+        }
+
+        [Test]
+        public void IfNextChelseaGameIsAtHome_ThenReturnTrue()
+        {
+            new JsonFootballData().GetWhetherNextChelseaGameIsAtHome().ShouldBe(true);
         }
     }
 }

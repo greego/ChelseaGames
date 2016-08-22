@@ -1,15 +1,14 @@
-﻿using ChelseaGames;
-using FootballDataOrgDataSource;
+﻿using FootballDataOrgDataSource;
+using NextGame;
 using System;
 
-namespace ChelseaGamesConsoleApp
+namespace NextGameConsole
 {
     class Program
     {
         static void Main(string[] args)
         {
-            IFootballData data = new JsonFootballData();
-            Console.WriteLine("Chelsea's next game is at {0}, against {1}", data.GetNextChelseaGameDate().ToLocalTime(), data.GetNextChelseaGameOpponent());
+            Console.WriteLine(new NextGameFormattedString(new JsonFootballData()).GetNextGameInfo());
         }
     }
 }

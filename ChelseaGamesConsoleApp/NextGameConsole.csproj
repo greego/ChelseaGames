@@ -7,8 +7,8 @@
     <ProjectGuid>{8AAA2A92-379E-45AF-9486-9FA700C5A6A2}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ChelseaGamesConsoleApp</RootNamespace>
-    <AssemblyName>ChelseaGamesConsoleApp</AssemblyName>
+    <RootNamespace>NextGameConsole</RootNamespace>
+    <AssemblyName>NextGameConsole</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -50,9 +50,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ChelseaGames\ChelseaGames.csproj">
+    <ProjectReference Include="..\ChelseaGames\NextGame.csproj">
       <Project>{5906ccf1-37a1-4f43-912a-c0d2ca746ca9}</Project>
-      <Name>ChelseaGames</Name>
+      <Name>NextGame</Name>
     </ProjectReference>
     <ProjectReference Include="..\FootballDataOrgDataSource\JsonDataSource.csproj">
       <Project>{4f87f5c7-d303-4b6e-8d80-714ae06b7c86}</Project>
