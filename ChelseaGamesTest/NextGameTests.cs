@@ -11,11 +11,11 @@
         [Test]
         public void ShouldFormatNextHomeGameInfo()
         {
-            var target = new NextGameFormattedString(GetDataSourceStub(new DateTimeOffset(2016, 8, 1, 11, 12, 23, TimeSpan.FromHours(0)),
+            var target = new NextGameFormattedString(GetDataSourceStub(new DateTimeOffset(2016, 8, 2, 11, 12, 23, TimeSpan.FromHours(0)),
                                                                                                                                  "Liverpool",
                                                                                                                                  true));
 
-            target.GetNextGameInfo().ShouldBe("Chelsea's next game is on Monday, 01 August at 09:12 PM, against Liverpool. It's at home.");
+            target.GetNextGameInfo().ShouldBe("Chelsea's next game is on Tuesday, 02 August at 09:12 PM, against Liverpool. It's at home.");
         }
 
         [Test]
