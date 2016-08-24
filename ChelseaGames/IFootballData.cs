@@ -3,8 +3,6 @@
     using System;
     public interface IFootballData
     {
-        DateTimeOffset GetNextChelseaGameDate();
-        string GetNextChelseaGameOpponent();
-        bool GetWhetherNextChelseaGameIsAtHome();
+        Fixture GetNextChelseaGameAfter(DateTimeOffset date);
     }
 }

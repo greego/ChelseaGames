@@ -7,27 +7,27 @@ namespace FootballDataOrgDataSource
     public class JsonFootballData : IFootballData
     {
         private const string ChelseaTeamName = "Chelsea FC";
-        private dynamic _nextChelseaFixture;
+        private dynamic _fixtures;
 
         public JsonFootballData()
         {
-            _nextChelseaFixture = ((dynamic)JsonConvert.DeserializeObject(Properties.Resources.nextFixture_json))
-                                        .fixtures[0];
+            _fixtures = ((dynamic)JsonConvert.DeserializeObject(Properties.Resources.nextFixture_json)).fixtures;
         }
 
-        public DateTimeOffset GetNextChelseaGameDate()
+        public Fixture GetNextChelseaGameAfter(DateTimeOffset date)
         {
-            return (DateTimeOffset)_nextChelseaFixture.date;
-        }
-
-        public string GetNextChelseaGameOpponent()
-        {
-            return (string)_nextChelseaFixture.awayTeamName;
-        }
-
-        public bool GetWhetherNextChelseaGameIsAtHome()
-        {
-            return ((string)_nextChelseaFixture.homeTeamName == ChelseaTeamName);
+            foreach (var fixture in _fixtures)
+            {
+                if ((DateTimeOffset)fixture.date > date && (string.Equals((string)fixture.homeTeamName, ChelseaTeamName) || string.Equals((string)fixture.awayTeamName, ChelseaTeamName)))
+                {
+                    if (String.Equals((string)fixture.homeTeamName, ChelseaTeamName))
+                    {
+                        return new Fixture((DateTimeOffset)fixture.date, (string)fixture.awayTeamName, "Stamford Bridge");
+                    }
+                    return new Fixture((DateTimeOffset)fixture.date, (string)fixture.homeTeamName, "some crappy place");
+                }
+            }
+            return null;
         }
     }
 }

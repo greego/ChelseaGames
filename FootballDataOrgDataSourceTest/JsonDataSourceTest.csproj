@@ -61,6 +61,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ChelseaGames\NextGame.csproj">
+      <Project>{5906CCF1-37A1-4F43-912A-C0D2CA746CA9}</Project>
+      <Name>NextGame</Name>
+    </ProjectReference>
     <ProjectReference Include="..\FootballDataOrgDataSource\JsonDataSource.csproj">
       <Project>{4f87f5c7-d303-4b6e-8d80-714ae06b7c86}</Project>
       <Name>JsonDataSource</Name>

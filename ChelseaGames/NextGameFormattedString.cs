@@ -14,10 +14,12 @@ namespace NextGame
 
         public string GetNextGameInfo()
         {
-            return String.Format("Chelsea's next game is on {0:dddd, dd MMMM} at {0:hh:mm tt}, against {1}. It's {2}at home.",
-                               _footballData.GetNextChelseaGameDate().ToLocalTime(),
-                               _footballData.GetNextChelseaGameOpponent(),
-                               _footballData.GetWhetherNextChelseaGameIsAtHome() ? String.Empty : "not ");
+            var nextGame = _footballData.GetNextChelseaGameAfter(DateTimeOffset.UtcNow);
+            
+            return String.Format("Chelsea's next game is on {0:dddd, dd MMMM} at {0:hh:mm tt}, against {1}. It's at {2}.",
+                               nextGame.Date.ToLocalTime(),
+                               nextGame.Opponent,
+                               nextGame.Venue);
         }
     }
 }

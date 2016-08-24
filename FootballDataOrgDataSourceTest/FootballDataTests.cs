@@ -1,30 +1,29 @@
-﻿
-using FootballDataOrgDataSource;
-using NUnit.Framework;
-using System;
-using Shouldly;
-
-namespace FootballDataOrgDataSourceTest
+﻿namespace FootballDataOrgDataSourceTest
 {
+    using FootballDataOrgDataSource;
+    using NUnit.Framework;
+    using System;
+    using Shouldly;
+
     [TestFixture]
     public class FootballDataTests
     {
         [Test]
-        public void WhenNextChelseaGameDateIsRequested_ThenReturnFirstFixturesDate()
+        public void GivenADate_WhenNextChelseaGameDateIsRequested_ThenReturnFirstFixtureAfterThatDate()
         {
-            new JsonFootballData().GetNextChelseaGameDate().ShouldBe(DateTimeOffset.Parse("2016-08-13T14:00:00Z"));
+            new JsonFootballData().GetNextChelseaGameAfter(new DateTimeOffset(2016, 08, 24, 0, 0, 0, TimeSpan.FromHours(10))).Date.ShouldBe(DateTimeOffset.Parse("2016-08-27T14:00:00Z"));
         }
 
         [Test]
-        public void WhenNextChelseaGameOpponentIsRequested_ThenReturnFirstFixturesAwayTeamName()
+        public void GivenADate_WhenNextChelseaGameOpponentIsRequested_ThenReturnOpponentForTheNextFixture()
         {
-            new JsonFootballData().GetNextChelseaGameOpponent().ShouldBe("West Ham United FC");
+            new JsonFootballData().GetNextChelseaGameAfter(new DateTimeOffset(2016, 08, 24, 0, 0, 0, TimeSpan.FromHours(10))).Opponent.ShouldBe("Burnley FC");
         }
 
         [Test]
-        public void IfNextChelseaGameIsAtHome_ThenReturnTrue()
+        public void GivenADate_WhenNextChelseaGameVenueIsRequested_ThenReturnStamfordBridge()
         {
-            new JsonFootballData().GetWhetherNextChelseaGameIsAtHome().ShouldBe(true);
+            new JsonFootballData().GetNextChelseaGameAfter(new DateTimeOffset(2016, 08, 24, 0, 0, 0, TimeSpan.FromHours(10))).Venue.ShouldBe("Stamford Bridge");
         }
     }
 }

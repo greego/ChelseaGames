@@ -5,30 +5,16 @@
 
     internal class FootballDataStub : IFootballData
     {
-        private DateTimeOffset _nextChelseaGame;
-        private string _nextChelseaOpponent;
-        private bool _atHome;
+        private Fixture _fixture;
 
         public FootballDataStub(DateTimeOffset nextChelseaGame, string nextChelseaOpponent, bool atHome)
         {
-            _nextChelseaGame = nextChelseaGame;
-            _nextChelseaOpponent = nextChelseaOpponent;
-            _atHome = atHome;
+            _fixture = new Fixture(nextChelseaGame, nextChelseaOpponent, atHome ? "Stamford Bridge" : "some crappy place");
         }
 
-        public DateTimeOffset GetNextChelseaGameDate()
+        public Fixture GetNextChelseaGameAfter(DateTimeOffset date)
         {
-            return _nextChelseaGame;
-        }
-
-        public string GetNextChelseaGameOpponent()
-        {
-            return _nextChelseaOpponent;
-        }
-
-        public bool GetWhetherNextChelseaGameIsAtHome()
-        {
-            return _atHome;
+            return _fixture;
         }
     }
 }
